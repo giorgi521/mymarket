@@ -1,8 +1,3 @@
-
 export default function Home() {
-  return (
-      <main>
-        asdj
-      </main>
-  )
+  return <main>asdj</main>;
 }
