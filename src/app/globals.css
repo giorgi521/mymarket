@@ -70,10 +70,69 @@
   * {
     @apply border-border;
     box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+.autoSuggest {
+  & > div {
+    position: relative;
+    & .react-autosuggest__container {
+      position: relative;
+    }
+    & .react-autosuggest__input--focused {
+      outline: none;
+    }
+    & .react-autosuggest__suggestions-container {
+      display: none;
+      background-color: #fff;
+    }
+    & .react-autosuggest__suggestions-container--open {
+      display: block;
+      position: absolute;
+      border-top: none;
+      background-color: #fff;
+      font-weight: normal;
+      font-size: 1rem;
+      border-radius: 12px;
+      max-height: 410px;
+      overflow-y: auto;
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      padding: 1rem;
+      color: black;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 4px;
+    }
+    & .react-autosuggest__suggestions-list {
+      margin: 0;
+      padding: 0.875rem 1px;
+      border-radius: 12px;
+      list-style-type: none;
+      width: 100%;
+      overflow-x: hidden;
+      background-color: white;
+    }
+    & .react-autosuggest__suggestion {
+      cursor: pointer;
+      padding: 0.3125rem 0 0.3125rem 0.9375rem;
+      border-radius: 12px;
+      &:active {
+        background: #f2f2f7;
+        color: #7f67be;
+      }
+      &:hover {
+        background-color: #f2f2f7;
+      }
+    }
+    & .react-autosuggest__suggestion--highlighted {
+      background-color: white;
+    }
+    & .react-autosuggest__suggestion--focused {
+      background-color: #f2f2f7;
+    }
   }
 }

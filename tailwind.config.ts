@@ -17,6 +17,23 @@ module.exports = {
     },
     extend: {
       colors: {
+        borderColor: {
+          default: '#dee2e6',
+        },
+        grey: {
+          default: 'rgb(51 51 51 )',
+        },
+        white: '#f1f3f6',
+        yellow: '#fec900',
+        hoverYellow: '#cb9f00',
+        activeYellow: '#b18b00',
+        red: '#f4364c)',
+        lightBorder: '#e6e6e6',
+        darkGray: '#333333',
+        blur: '#5386e4',
+        darkBlue: '#3c74ff',
+        grayIcon: '#272a37',
+
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

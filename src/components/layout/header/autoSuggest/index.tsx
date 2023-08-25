@@ -1,8 +1,9 @@
 'use client';
-//
 
 import React, { useState } from 'react';
 import Autosuggest from 'react-autosuggest';
+import { CustomInput } from '@/src/components/ui/input';
+import { Camera, Search } from 'lucide-react';
 
 interface suggestions {
   name: string;
@@ -47,17 +48,6 @@ export default function FielterInput() {
   const [value, setValue] = useState('');
   const [suggestions, setSuggestions] = useState<suggestions[]>([]);
 
-  const onChange = (
-    event: any,
-    {
-      newValue,
-    }: {
-      newValue: string;
-    },
-  ) => {
-    setValue(newValue);
-  };
-
   const onSuggestionsFetchRequested = ({ value }: { value: string }) => {
     setSuggestions(getSuggestions(value));
   };
@@ -68,32 +58,51 @@ export default function FielterInput() {
 
   // Autosuggest will pass through all these props to the input.
   const inputProps = {
-    placeholder: 'Type a programming language',
     value,
-    onChange,
+    onChange: (
+      _event: any,
+      {
+        newValue,
+      }: {
+        newValue: string;
+      },
+    ) => {
+      setValue(newValue);
+    },
   };
 
   const renderInputComponent = (inputProps: any) => (
-    <div>
-      <input
-        className="w-[500px] h-[40px] bg-gray-200 rounded-md"
-        id="outlined-adornment-password"
+    <div className="flex items-center justify-between h-10 rounded-[28px] border px-[14px] py-4 w-[461px]">
+      <CustomInput
+        id="search"
+        placeholder="დაიწყე ძიება"
         type="text"
-        variant="filled"
+        variant="outlined"
         {...inputProps}
       />
+      <div className="flex items-center">
+        <div className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-white cursor-pointer">
+          <Camera color="#272a37" size={18} className="stroke-[3px]" />
+        </div>
+        <span className="h-6 w-[1px] bg-white mx-4" />
+        <div className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-white cursor-pointer">
+          <Search color="#272a37" size={18} className="stroke-[3px]" />
+        </div>
+      </div>
     </div>
   );
 
   return (
-    <Autosuggest
-      suggestions={suggestions}
-      onSuggestionsFetchRequested={onSuggestionsFetchRequested}
-      onSuggestionsClearRequested={onSuggestionsClearRequested}
-      getSuggestionValue={getSuggestionValue}
-      renderSuggestion={renderSuggestion}
-      renderInputComponent={renderInputComponent}
-      inputProps={inputProps}
-    />
+    <div className="autoSuggest">
+      <Autosuggest
+        suggestions={suggestions}
+        onSuggestionsFetchRequested={onSuggestionsFetchRequested}
+        onSuggestionsClearRequested={onSuggestionsClearRequested}
+        getSuggestionValue={getSuggestionValue}
+        renderSuggestion={renderSuggestion}
+        renderInputComponent={renderInputComponent}
+        inputProps={inputProps}
+      />
+    </div>
   );
 }
