@@ -8,7 +8,7 @@ import CustomLink from '@/src/components/shared/customLink';
 
 const Footer = () => {
   return (
-    <div className="flex flex-col w-full absolute bottom-0">
+    <div className="flex flex-col w-full">
       <div className="h-12 bg-yellow flex items-center justify-center">
         <ArrowUpFromDot className="stroke-white cursor-pointer" />
       </div>
