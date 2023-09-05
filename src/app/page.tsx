@@ -4,6 +4,8 @@ import OnlineShop from '@/src/shared/sharedComponents/shop';
 import shopNow from '@/public/shopNow.png';
 import tradeIn from '@/public/tradeIn.png';
 import buyFast from '@/public/buyFast.png';
+import Circles from '@/src/components/home/circles';
+import SuperVip from '@/src/components/home/superVip';
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
         buttonTxt="დაიწყე შოპინგი"
         img={shopNow}
       />
+      <Circles />
       <OnlineShop
         title="Trade in - შეცვალე ძველი ტექნიკა ახლით"
         desc="ატვირთე შენი ძველი ტექნიკის მონაცემები, ჩააბარე და დაიბრუნე მისი ღირებულება საბანკო ანგარიშზე"
@@ -24,6 +27,7 @@ export default function Home() {
         img={tradeIn}
         rightToleft={true}
       />
+      <SuperVip />
       <OnlineShop
         title="იყიდე-გაყიდე ნივთები მარტივად და სწრაფად"
         desc="იყიდე/გაყიდე მეორადი ან ახალი პროდუქცია განვადების შესაძლებლობით ონლაინ. ისარგებლე კურიერის მომსახურებით ან პირადად შეხვდით ერთმანეთს."
