@@ -34,13 +34,13 @@ const Footer = () => {
           <div className="flex flex-wrap justify-between w-full">
             {FOOTER_NAV.map(({ id, title, list, icons }) => (
               <div key={id}>
-                <div className="text-grey-default text-xs font-bold mb-4 cursor-pointer">
+                <div className="text-grey-default text-xs font-bold mb-4 cursor-pointer hover:underline hover:underline-offset-1">
                   {title}
                 </div>
                 <div>
                   {list.map(({ id, title }) => (
                     <div key={id} className="w-full">
-                      <div className="text-grey-default text-xs mb-4 opacity-70 cursor-pointer">
+                      <div className="text-grey-default text-xs mb-4 opacity-70 cursor-pointer hover:underline hover:underline-offset-1">
                         {title}
                       </div>
                     </div>
@@ -69,12 +69,12 @@ const Footer = () => {
           ))}
         </div>
         <div className="h-[64px] max-w-[1272px] mx-auto rounded-[64px] border flex gap-4 pr-4">
-          <div className="h-full w-[130px] bg-darkBlue rounded-[64px] flex items-center justify-center">
+          <div className="h-full w-[130px] bg-blue-default rounded-[64px] flex items-center justify-center">
             <TnetWidthTxt />
           </div>
           <div className="flex justify-between items-center w-full">
             {TNET_IMAGES.map(({ id, icon }) => (
-              <span>{icon}</span>
+              <span key={id}>{icon}</span>
             ))}
           </div>
         </div>

@@ -23,7 +23,7 @@ const Icons = [
 
 const Header = () => {
   return (
-    <div className="border-b border-white">
+    <div className="border-b-2 border-white">
       <div className="flex h-20 justify-between max-w-[1272px] mx-auto items-center ">
         <div className="h-[40px] w-[150px] mr-7">
           <Image src={mymarketLogo} alt="logo" priority />

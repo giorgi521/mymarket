@@ -17,21 +17,33 @@ module.exports = {
     },
     extend: {
       colors: {
+        hover: {
+          default: '#f2f3f6',
+          yellow: '#cb9f00',
+        },
         borderColor: {
           default: '#dee2e6',
         },
         grey: {
           default: 'rgb(51 51 51 )',
+          100: '#454B57',
+          200: 'gba(137,150,174,.1)',
+        },
+        red: {
+          default: '#f4364c',
+          100: '#fcedee',
+          200: '#dc3545',
+        },
+        blue: {
+          default: '#3c74ff',
+          100: '#edf3fc',
+          200: '#5386e4',
         },
         white: '#f1f3f6',
         yellow: '#fec900',
-        hoverYellow: '#cb9f00',
         activeYellow: '#b18b00',
-        red: '#f4364c)',
         lightBorder: '#e6e6e6',
         darkGray: '#333333',
-        blur: '#5386e4',
-        darkBlue: '#3c74ff',
         grayIcon: '#272a37',
 
         border: 'hsl(var(--border))',

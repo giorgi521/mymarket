@@ -11,12 +11,15 @@ const buttonVariants = cva(
       variant: {
         default:
           'rounded-[20px] border-2 border-solid border-white hover:border-yellow leading-4 max-w-32 font-bold text-xs',
-        ghost: '',
+        ghost:
+          'rounded-[20px] border-2 bg-blue-100 text-blue-200 border-white hover:border-blue-200 leading-4 max-w-32 font-bold text-xs',
+        discount:
+          'rounded-[20px] border-2 bg-red-100 text-red-200 border-white hover:border-red-200 leading-4 max-w-32 font-bold text-xs',
         link: '',
       },
       size: {
         default: 'h-10 px-3 py-0',
-        sm: '',
+        sm: 'h-[56px] w-12',
         lg: '',
         icon: '',
       },

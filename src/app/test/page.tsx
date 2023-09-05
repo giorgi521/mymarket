@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import backgroundImage from '../favicon.ico';
+import backgroundImage from '../icon.ico';
 
 import React from 'react';
 const Page = () => {
