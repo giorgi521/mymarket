@@ -38,10 +38,10 @@ const NavigationLeft = ({
           backgroundSize: '100% 20px,100% 7px,100% 14px,100% 7px',
           flexShrink: '0',
         }}
-        className="h-[572px] pr-6 relative overflow-y-auto
-       flex flex-col [&>div]:text-grey-100 after:content-[''] after:w-[2px]
+        className={cn`h-[572px] pr-6 relative overflow-y-auto
+       flex flex-col [&>div]:text-grey-100 ${show && "after:content-[''] after:w-[2px]"}
         after:h-[620px] after:absolute after:right-0 after:top-0 after:origin-top
-         after:bg-white after:rounded-2xl  hover:[&>div]:text-yellow"
+         after:bg-white after:rounded-2xl  hover:[&>div]:text-yellow`}
       >
         {NAV_LEFT.map(({ id, title, icon }) => (
           <div

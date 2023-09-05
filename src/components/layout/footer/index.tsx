@@ -1,10 +1,10 @@
 import React from 'react';
-import GooglePlayBadgeIcon from '@/src/components/shared/icons/googlePlayBadge';
-import AppStoreBadgeIcon from '@/src/components/shared/icons/appStoreBadge';
+import GooglePlayBadgeIcon from '@/src/shared/icons/googlePlayBadge';
+import AppStoreBadgeIcon from '@/src/shared/icons/appStoreBadge';
 import { FOOTER_NAV, RULES, TNET_IMAGES } from '@/src/components/layout/footer/helper';
-import TnetWidthTxt from '@/src/components/shared/icons/tnetWidthTxt';
+import TnetWidthTxt from '@/src/shared/icons/tnetWidthTxt';
 import { ArrowUpFromDot } from 'lucide-react';
-import CustomLink from '@/src/components/shared/customLink';
+import CustomLink from '@/src/shared/customLink';
 
 const Footer = () => {
   return (

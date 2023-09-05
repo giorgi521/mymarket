@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import NavigationLeft from './navBar/navigationLeft';
 import Categories from './categories';
 import { useState } from 'react';
-import Events from '@/src/components/shared/secHeaderButtons';
+import Events from '@/src/shared/secHeaderButtons';
 
 const Header = () => {
   const [showCategories, setSowCategories] = useState(false);

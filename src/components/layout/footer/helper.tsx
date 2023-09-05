@@ -1,14 +1,14 @@
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
-import Myauto from '@/src/components/shared/icons/myauto';
-import MyPartIcon from '@/src/components/shared/icons/myPart';
-import MyHomeIcon from '@/src/components/shared/icons/myHome';
-import MyMarketIcon from '@/src/components/shared/icons/myMarket';
-import SuperAppIcon from '@/src/components/shared/icons/superApp';
-import MyShop from '@/src/components/shared/icons/myShop';
-import VendooIcon from '@/src/components/shared/icons/vendoo';
-import TktIcon from '@/src/components/shared/icons/tkt';
-import Swoop from '@/src/components/shared/icons/swoop';
-import LivoIcon from '@/src/components/shared/icons/livo';
+import Myauto from '@/src/shared/icons/myauto';
+import MyPartIcon from '@/src/shared/icons/myPart';
+import MyHomeIcon from '@/src/shared/icons/myHome';
+import MyMarketIcon from '@/src/shared/icons/myMarket';
+import SuperAppIcon from '@/src/shared/icons/superApp';
+import MyShop from '@/src/shared/icons/myShop';
+import VendooIcon from '@/src/shared/icons/vendoo';
+import TktIcon from '@/src/shared/icons/tkt';
+import Swoop from '@/src/shared/icons/swoop';
+import LivoIcon from '@/src/shared/icons/livo';
 
 export const FOOTER_NAV = [
   {

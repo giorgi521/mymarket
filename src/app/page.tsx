@@ -1,6 +1,6 @@
 import Header from '@/src/components/home/header';
 import ContinueSearch from '@/src/components/home/continueSearching';
-import OnlineShop from '@/src/components/shared/sharedComponents/shop';
+import OnlineShop from '@/src/shared/sharedComponents/shop';
 import shopNow from '@/public/shopNow.png';
 import tradeIn from '@/public/tradeIn.png';
 import buyFast from '@/public/buyFast.png';

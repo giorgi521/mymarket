@@ -4,7 +4,7 @@ import Image from 'next/image';
 import FielterInput from './autoSuggest';
 import { CustomButton } from '@components/ui/button';
 import { Heart, MessagesSquare, PlusCircle, ShoppingCart, User2, Menu } from 'lucide-react';
-import Tnet from '@components/shared/icons/tnet';
+import Tnet from '@/src/shared/icons/tnet';
 
 const Icons = [
   {

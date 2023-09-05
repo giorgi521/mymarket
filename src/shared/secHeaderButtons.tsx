@@ -1,7 +1,7 @@
 import React from 'react';
 import { BadgePercent, ShoppingBag } from 'lucide-react';
 import CustomLink from './customLink';
-import { CustomButton } from '../ui/button';
+import { CustomButton } from '../components/ui/button';
 import { buttonVariants } from '@/src/components/ui/button';
 
 const EVENT_DATA = [
